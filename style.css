@@ -1,0 +1,98 @@
+body {
+    box-sizing: border-box;
+    margin:4rem;
+    padding: 0;
+    background: #333;
+    color: white;
+}
+
+.app__name {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.text__field {
+    width: 100%;
+}
+
+.input__title, .input__content {
+    width: 30%;
+    padding: 0.3rem;
+    outline: 0;
+    border: 1.5px solid rgb(218, 218, 74);
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.btn {
+    border-radius: 10px;
+    outline: none;
+    background: rgb(255, 255, 4);
+    color: black;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.empty__field {
+    text-align: center;
+    margin: 5rem;
+}
+
+.notes__list {
+    list-style: none;
+  
+}
+
+.note__item {
+    display: inline-block;
+    border: 1px solid white;
+    width: 15rem; 
+    min-height: 15rem;
+    max-height: auto;
+    padding-left: 1rem;
+    overflow: hidden;
+    color: black;
+    margin: 2rem 2rem;
+}
+
+.close__btn {
+    background: red;
+    border: 1px solid white;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.2rem;
+    position: fixed;
+    top:0;
+    right: 0;
+    cursor: pointer;
+}
+
+.close__btn i{
+    color: white;
+    position: fixed;
+    right:0.5rem; 
+    font-size: 1.3rem;   
+}
+
+li {
+    transform: rotate(5deg);
+    background: yellow;
+}
+
+li:nth-child(even) {
+    transform: rotate(-5deg);
+    background: orange;
+}
+
+.note__content {
+    word-wrap: break-word;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
