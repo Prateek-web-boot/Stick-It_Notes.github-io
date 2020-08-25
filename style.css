@@ -90,6 +90,8 @@ li:nth-child(3n) {
 }
 
 .note__content {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 0.9rem;
     word-wrap: break-word;
 }
 
