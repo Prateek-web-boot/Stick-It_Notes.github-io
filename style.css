@@ -15,7 +15,7 @@ body {
 
 .input__title, .input__content {
     width: 30%;
-    padding: 0.3rem;
+    padding: 0.6rem;
     outline: 0;
     border: 1.5px solid rgb(218, 218, 74);
     border-radius: 5px;
