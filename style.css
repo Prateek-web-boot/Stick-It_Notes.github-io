@@ -4,15 +4,13 @@ body {
     padding: 0;
     background: #333;
     color: white;
+    font-family: arial, sans-serif;
+
 }
 
 .app__name {
     font-size: 2rem;
     margin: 0;
-}
-
-.text__field {
-    width: 100%;
 }
 
 .input__title, .input__content {
@@ -48,20 +46,20 @@ body {
 .note__item {
     display: inline-block;
     border: 1px solid white;
-    width: 15rem; 
-    min-height: 15rem;
+    width: 12rem; 
+    min-height: 12rem;
     max-height: auto;
     padding-left: 1rem;
     overflow: hidden;
     color: black;
-    margin: 2rem 2rem;
+    margin: 2rem 1.5rem;
 }
 
 .close__btn {
     background: red;
-    border: 1px solid white;
-    height: 1.5rem;
-    width: 1.5rem;
+    border: 1.5px double white;
+    height: 1.8rem;
+    width: 1.8rem;
     margin: 0.2rem;
     position: fixed;
     top:0;
@@ -81,18 +79,46 @@ li {
     background: yellow;
 }
 
-li:nth-child(even) {
+li:nth-child(2n) {
     transform: rotate(-5deg);
     background: orange;
+}
+
+li:nth-child(3n) {
+    transform: rotate(5deg);
+    background: dodgerblue;
 }
 
 .note__content {
     word-wrap: break-word;
 }
 
+.note__title {
+     word-wrap: break-word;
+}
+
 .hidden {
     display: none;
 }
 
+@media (max-width: 60rem) {
+    /* .note__item:first-child{
+        margin: 2rem 0rem;
+    } */
+
+    .note__item{
+        margin-left: 1rem ;
+    }
+}
+
+@media (max-width: 41rem) {
+    .input__title, .input__content {
+        width: 100%;
+        margin-left: 0;
+    }
+     ul {
+        padding-inline-start: 0;
+     }
+}
 
 
